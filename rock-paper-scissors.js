@@ -1,27 +1,27 @@
-let playerOne = scissors;
-let computer = scissors;
+let playerOne = `rock`;
+let computer = `paper`;
+let reply;
 
 if (playerOne === computer) {
-  computer = `tie game`;
-  playerOne = `tie game`;
-} else if (playerOne === rock) {
-  if (computer === paper) {
-    computer = `wins`;
+  reply = `tie game`;
+} else if (playerOne === `rock`) {
+  if (computer === `paper`) {
+    reply = `computer wins`;
   } else {
-    playerOne = `wins`;
+    reply = `playerOne wins`;
   }
-} else if (playerOne === paper) {
-  if (computer === scissors) {
-    computer = `wins`;
+} else if (playerOne === `paper`) {
+  if (computer === `scissors`) {
+    reply = `computer wins`;
   } else {
-    playerOne = `wins`;
+    reply = `playerOne wins`;
   }
-} else if (playerOne === scissors) {
-  if (computer === rock) {
-    computer = `wins`;
+} else if (playerOne === `scissors`) {
+  if (computer === `rock`) {
+    reply = `computer wins`;
   } else {
-    playerOne = `wins`;
+    reply = `playerOne wins`;
   }
 }
 
-console.log(computer, playerOne);
+console.log(reply);
