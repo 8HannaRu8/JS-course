@@ -1,4 +1,4 @@
-let playerOne = `rock`;
+let playerOne = `scissors`;
 let computer = `paper`;
 
 switch (playerOne) {
@@ -22,14 +22,10 @@ switch (playerOne) {
     }
     break;
 
-  case `scissors`:
+  default:
     if (computer === `rock`) {
       console.log(`Computer wins!`);
     } else {
       console.log(`PlayerOne wins!`);
     }
-    break;
-
-  default:
-    console.log(`No match`);
 }
